@@ -26,6 +26,8 @@ kind: Service
 metadata:
   name: redis-service
 spec:
+  selector:
+    app: redis
   ports:
    -  protocol: TCP
       port: 80
